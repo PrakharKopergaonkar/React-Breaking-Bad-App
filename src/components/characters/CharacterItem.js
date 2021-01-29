@@ -1,6 +1,7 @@
 import React from 'react';
 
-function CharacterItem({key, item}) {
+//Functional Component that builds individual grid of a character
+const CharacterItem = ({item}) => {
     return (
         <div className="card">
             <div className="card-inner">

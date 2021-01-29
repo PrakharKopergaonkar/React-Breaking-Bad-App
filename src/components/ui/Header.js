@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from '../../img/logo.png'
 
-function Header() {
+//Functional Header Component
+const Header = () => {
     return (
         <header className="center">
-            <img src={logo} alt="No img available"/>
+            <img src={logo} alt=""/>
         </header>
     );
 }

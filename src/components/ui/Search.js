@@ -1,11 +1,15 @@
 import React, {useState} from 'react';
 
-function Search({getQuery}) {
+//Compoents that lets user search and filter character
+const Search = ({getQuery}) => {
+    //State
     const [Text, setText] = useState('');
+
     const OnChange = (q) => {
         setText(q);
         getQuery(q);
     }
+    
     return (
         <section className="search"> 
             <form>
